@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/*Configurações Gerais*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Fonte-face*/
+
+@font-face{
+    font-family: 'Bebas';
+    src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Tiny';
+    src: url('../fontes/Tiny5-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Raiz*/
+
+:root{
+  
+    --fonte1: Arial, Verdana, Helvetica, sans-serif;
+    --fonte2: 'Bebas';
+    --fonte3: 'Tiny';
+    
+}
+
+/*Corpo*/
+
+body{
+
+}
+
+/*Principal*/
+
+main{
+    
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: auto;
+    max-width: 900px;
+    min-width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: var(--fonte1);
+    font-size: 4em;
+    text-align: center;
+    padding: 20px 0px 50px 0px;
+}
+
+p#txtusuario{
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    padding: 0px 5px 0px 2px;
+}
+
+input#txtusuario{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 0px 5px 100px;
+    margin-left: 1px;
+}
+
+p#txtsenha{
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    padding: 0px 5px 0px 2px;
+}
+
+input#txtsenha{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 0px 5px 100px;
+    margin-left: 16px;
+
+}
+
+p#txtentrar{
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    padding: 50px 5px 40px 0px;
+}
+
+input#txtentrar{
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+/*Rodapé*/
+
+footer{}
+
