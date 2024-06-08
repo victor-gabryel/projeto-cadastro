@@ -1,9 +1,110 @@
 @charset "UTF-8";
 
-/*  */
+/*Configurações-Gerais*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
-/*  */
 
-/*  */
+/*Fonte-face*/
+@font-face{
+    font-family: 'Bebas';
+    src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-/*  */
+@font-face{
+    font-family: 'Tiny';
+    src: url('../fontes/Tiny5-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Raiz*/
+:root{
+
+    --cor1: #;
+    --cor2: #;
+    --cor3: #;
+    --cor4: #;
+    --cor5: #;
+    --cor6: #;
+  
+    --fonte1: Arial, Verdana, Helvetica, sans-serif;
+    --fonte2: 'Bebas';
+    --fonte3: 'Tiny'; 
+}
+
+/*Corpo*/
+body{
+    background-image: linear-gradient(to bottom, var(), var(), var());
+    font-family: var();
+}
+
+
+/*Cabeçalho*/
+header {
+    background-image: linear-gradient(to bottom, var(), var());
+    background-color: var();
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header h1 {
+    color: black;
+    font-family: var();
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 0px -2px 5px #060606d3;
+}
+
+header > p {
+    font-family: var();
+    font-size: 1.2em;
+    color: black;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    padding-bottom: 50px;
+    
+}
+
+
+/*Navegação*/
+nav {
+    background-color: ;
+    padding: 12px;
+    box-shadow: 0px 7px 9px black;
+}
+
+nav > a {
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var();
+    color: var();
+}
+
+
+/*Principal*/
+main{
+
+}
+
+
+/*Rodapé*/
+footer{
+
+}

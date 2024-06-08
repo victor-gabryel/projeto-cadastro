@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
 /*Configurações Gerais*/
-
 *{
     margin: 0px;
     padding: 0px;
 }
 
-/*Fonte-face*/
 
+/*Fonte-face*/
 @font-face{
     font-family: 'Bebas';
     src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
@@ -23,43 +22,49 @@
     font-style: normal;
 }
 
-/*Raiz*/
 
+/*Raiz*/
 :root{
-  
+    --cor1: #;
+    --cor2: #;
+    --cor3: #;
+    --cor4: #;
+    --cor5: #;
+    --cor6: #;
+
     --fonte1: Arial, Verdana, Helvetica, sans-serif;
     --fonte2: 'Bebas';
     --fonte3: 'Tiny';
-    
 }
 
-/*Corpo*/
 
+/*Corpo*/
 body{
 
 }
 
-/*Principal*/
 
+/*Principal*/
 main{
-    
+
+    /*     
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+     */
     margin: auto;
-    max-width: 900px;
-    min-width: 500px;
+    max-width: 400px;
+    min-width: 300px;
     border: 1px solid black;
     border-radius: 10px;
 }
 
 h1{
     font-family: var(--fonte1);
-    font-size: 4em;
+    font-size: 3.5em;
     text-align: center;
-    padding: 20px 0px 50px 0px;
+    padding: 20px 0px 40px 0px;
 }
 
 p#txtusuario{
@@ -95,7 +100,7 @@ p#txtentrar{
     margin: auto;
     text-align: center;
     font-size: 2em;
-    padding: 50px 5px 40px 0px;
+    padding: 40px 5px 20px 0px;
 }
 
 input#txtentrar{
@@ -105,7 +110,17 @@ input#txtentrar{
     padding: 10px 20px 10px 20px;
 }
 
-/*Rodapé*/
+p#voltar{
+    text-align: right;
+    padding: 0px 15px 10px 0px;
+}
 
+p#voltar > a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/*Rodapé*/
 footer{}
 
