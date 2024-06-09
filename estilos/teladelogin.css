@@ -46,8 +46,16 @@ body{
 
 /*Principal*/
 main{
-   
-   
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: auto;
+    max-width: 400px;
+    min-width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 h1{
