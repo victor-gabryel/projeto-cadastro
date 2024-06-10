@@ -43,14 +43,16 @@ body{
 
 }
 
+/*Cabeçalho*/
+header {
+    margin: auto;
+    max-height: 40vh;
+    min-height: 15vh;
+}
+
 
 /*Principal*/
 main{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     margin: auto;
     max-width: 400px;
     min-width: 300px;
