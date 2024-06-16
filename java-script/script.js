@@ -1,3 +1,4 @@
+//MENU 
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
@@ -42,19 +43,3 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
-
-
-// function entrar() {
-
-//     let usuario = window.document.getElementById('txtusuario')
-
-//     let senha = window.document.getElementById('txtsenha')
-
-//     if (usuario.value == 'Victor' && senha.value == 123){
-
-//         window.location = ('')
-
-//     } else {
-//         window.alert('Usuário ou senha incorreto!')
-//     }
-// }
