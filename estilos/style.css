@@ -5,6 +5,37 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+ }
+
+/*Fontes Externas*/
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tiny";
+  src: url('../fontes/Tiny5-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+ /*Raiz*/
+ :root{
+
+  --cor1:#626278;
+  --cor2:#454557;
+  --cor3:#23232E;
+  --cor4:#19192C;
+  --cor5:#0F0F24;  
+
+  --fonte-padrao: Arial, Helvetica, sans-serif;
+  --fonte-bebas: 'Bebas';
+  --fonte-tiny: 'Tiny';
  }
 
 
@@ -32,8 +63,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
+    background: var(--cor3);
     height: 8vh;
   }
   
@@ -78,7 +108,7 @@
       right: 0;
       width: 50vw;
       height: 92vh;
-      background: #23232e;
+      background: var(--cor3);
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
@@ -143,13 +173,13 @@
     width: 90px;
     display: block;
     transform: translate(-55%, 5%);
-    background-color: #23232e;
+    background-color: var(--cor3);
     box-shadow:  0 0 0px black;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
   }
 
   div.dropdown-log li:hover{
-    background-color: red;
+    background-color: var(--cor2);
   }
 
   div.dropdown-log li a {
@@ -177,12 +207,13 @@
     width: 140px;
     display: block;
     transform: translate(-23%, 5%);
-    background-color: #23232e;
+    background-color: var(--cor3);
     box-shadow:  0 0 0px black;
+    padding-bottom: 2px;
   }
 
   div.dropdown-conf li:hover{
-    background-color: red;
+    background-color: var(--cor2);
   }
 
   div.dropdown-conf li a {
