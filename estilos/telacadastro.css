@@ -187,7 +187,7 @@ body{
 }
 
 /*continue-button*/
-.continue-button button {
+.cadastrar-button button {
     width: 100%;
     margin-top: 2.5rem;
     border: none;
@@ -197,11 +197,11 @@ body{
     cursor: pointer;
 }
 
-.continue-button button:hover {
+.cadastrar-button button:hover {
     background-color: #6b63fff1;
 }
 
-.continue-button button a {
+.cadastrar-button button a {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
