@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicons/qtc.ico" type="qtc">
+    <link rel="stylesheet" href="../estilos/teladelogin.css">
+    <title>Entrar</title>
+</head>
+<body>
+    
+    <div class="container-login">
+
+        <!--imagem-->
+        <div class="img-box">
+            <img src="../imagens/login.svg">
+        </div>
+
+        <div class="content-box">
+            <div class="form-box">
+                <h2>Login</h2>
+                <form>
+
+                    <!--LET EMAIL-->
+                    <div class="input-box">
+                        <span>Usuário</span>
+                        <input type="email" name="email" id="email" placeholder="Usuário ou @email.com">
+                    </div>
+
+                    <!--LET SENHA-->
+                    <div class="input-box">
+                        <span>Senha</span>
+                        <input type="password" name="passaword" id="senha" placeholder="senha">
+                    </div>
+
+                    <div class="remember">
+                        <label>
+                            <input type="checkbox" name="" id=""> Lembra-se
+                        </label>
+                        <a href="#">Esqueceu a Senha?</a>
+                    </div>
+
+                    <!--FUNCTION ENTRAR-->
+                    <div class="input-box">
+                        <input type="submit" value="Entrar" onclick="entrar()">
+                    </div>
+
+                    <div class="input-box" id="home">
+                        <p>Não tem uma conta? <a href="telacadastro.html">Cadastre-se</a></p>
+
+                        <a href="../index.html" id="home">Home</a>
+                    </div>
+
+                    <h3>Logar Com</h3>
+                    <ul class="ul">
+                        <li><img src="../imagens/facebook.png"></li>
+                        <li><img src="../imagens/google.png"></li>
+                        <li><img src="../imagens/apple.png"></li>
+                    </ul>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../java-script/script.js"></script>
+
+</body>
+</html>

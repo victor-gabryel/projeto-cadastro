@@ -1,4 +1,4 @@
-//TELA-DE-LOGIN
+//INDEX
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
@@ -43,3 +43,19 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+  //TELA-DE-LOGIN
+  function entrar() {
+
+    let email = document.getElementById('email')
+    let senha = document.getElementById('senha')
+
+    if (email.value == 'Victor' && senha.value == 123) {
+      alert('Chama')
+      //ADICIONAR REDIRECIONAMENTO 
+    } else if (email.value == 0 || senha.value == 0) {
+      alert('[ERROR] Falta preencher campos!')
+    } else {
+      alert('[ERROR] Usuário não encontrado!')
+    }
+  }

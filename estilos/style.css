@@ -24,8 +24,8 @@
 }
 
 
- /*Raiz*/
- :root{
+/*Raiz*/
+:root{
 
   --cor1:#626278;
   --cor2:#454557;
@@ -36,7 +36,7 @@
   --fonte-padrao: Arial, Helvetica, sans-serif;
   --fonte-bebas: 'Bebas';
   --fonte-tiny: 'Tiny';
- }
+}
 
 
 /*Cabeçalho*/
@@ -201,7 +201,7 @@ div.dropdown-log li:hover{
   div.dropdown-log li a {
     display: block;
     color: #fff;
-    padding: 1px 0px 1px 0px ;
+    padding: 2px 0px 2px 0px ;
   }
 
 
@@ -236,5 +236,5 @@ div.dropdown-conf li:hover{
 div.dropdown-conf li a {
   display: block;
   color: #fff;
-  padding: 1px 0px 1px 0px;
+  padding: 2px 0px 2px 0px;
 }
