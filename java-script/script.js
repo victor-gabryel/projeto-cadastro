@@ -54,8 +54,31 @@ class MobileNavbar {
       alert('Chama')
       //ADICIONAR REDIRECIONAMENTO 
     } else if (email.value == 0 || senha.value == 0) {
-      alert('[ERROR] Falta preencher campos!')
+      alert('[ERRO] Falta preencher campos!')
     } else {
-      alert('[ERROR] Usuário não encontrado!')
+      alert('[ERRO] Usuário ou Senha incorretos!')
     }
+
+    if (email.value == 'ADM' && senha.value == 321) {
+      alert('Chama')
+      //ADICIONAR REDIRECIONAMENTO 
+    } else if (email.value == 0 || senha.value == 0) {
+      alert('[ERRO] Falta preencher campos!')
+    } else {
+      alert('[ERRO] Usuário ou Senha incorretos!')
+    } 
+  }
+
+  //MODOS-DE-TELA
+
+  function modolight() {
+    var body = document.body
+    body.style.background = "linear-gradient(to left, #626278, #454557)"
+  }
+
+  function mododark() {
+    var body = document.body
+    var main = document.getElementById('main')
+    var footer = document.getElementById('footer')
+    body.style.background = "linear-gradient(to left, #23232E, #19192C)"
   }

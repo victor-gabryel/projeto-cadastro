@@ -38,6 +38,10 @@
   --fonte-tiny: 'Tiny';
 }
 
+/*Corpo*/
+body {
+  background: linear-gradient(to left, var(--cor1), var(--cor2));
+}
 
 /*Cabeçalho*/
 
@@ -58,9 +62,10 @@ a:hover {
 }
   
 .logo {
-  font-size: 24px;
+  font-size: 32px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  font-family: var(--fonte-bebas);
 }
   
 nav {
@@ -237,4 +242,94 @@ div.dropdown-conf li a {
   display: block;
   color: #fff;
   padding: 2px 0px 2px 0px;
+}
+
+div.dropdown-conf li div#modos {
+  margin: 0;
+  color: #fff;
+  padding: 2px 0px 2px 0px;
+}
+
+/*Principal*/
+
+div.divmain {
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffffbe;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.775);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+div.divmain h1 {
+
+}
+
+div.divmain h2 {
+  font-family: var(--fonte-bebas);
+  text-transform: uppercase;
+  margin: 30px 0px 30px 0px;
+  text-decoration: none;
+}
+
+div.divmain p {
+  margin: 20px 0px 20px 0px;
+  text-align: justify;
+  text-indent: 25px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+div.divmain a {
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+div.divmain a:hover {
+  background-color: var(--cor);
+  color: var(--cor3);
+}
+
+img#fotoperfil {
+  width: 200px;
+}
+
+div.divmain div#video {
+  margin: -20px -20px -20px -0px;
+  padding-bottom: 60%; 
+  padding-top: -60%;
+  position: relative;
+}
+
+div.divmain div#video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+/*Rodapé*/
+footer {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.775);
+  border-radius: 10px;
+  margin: auto;
+  max-width: 1000px;
+  min-width: 300px;
+  background-color: #ffffffbe;
+  color: black;
+  text-align: center;
+  font-size: 1em;
+  padding: 8px;
+}
+
+footer a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
