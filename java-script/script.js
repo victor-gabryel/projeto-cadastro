@@ -82,3 +82,5 @@ class MobileNavbar {
     var footer = document.getElementById('footer')
     body.style.background = "linear-gradient(to left, #23232E, #19192C)"
   }
+
+  
