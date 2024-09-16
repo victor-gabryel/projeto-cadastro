@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+/*Fontes_Externas=========================================================================*/
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tiny";
+  src: url('../fontes/Tiny5-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/*Raiz====================================================================================*/
+:root{
+
+  --cor1:#DFF5EA;
+  --cor2:#7CFAE7;
+  --cor3:#7FE4FA;
+  --cor4:#19D2FA;
+  --cor5:#379AFA;
+  --cor6:#5F7DFA;
+
+  --fonte-padrao: Arial, Helvetica, sans-serif;
+  --fonte-bebas: 'Bebas';
+  --fonte-tiny: 'Tiny';
+}
+
+
+
+/*Configurações_Gerais====================================================================*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--fonte-padrao);
+}
+
+
+
+/*Corpo===================================================================================*/
+body {
+  background: linear-gradient(to left, var(--cor1), var(--cor2));
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+
+
+/*Cabeçalho===============================================================================*/
+
+/*Mobile_Menu*/
+li.dropdown-des {
+  display: none;
+}
+
+a {
+  font-family: var(--fonte-bebas);
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+  
+a:hover {
+  opacity: 0.7;
+}
+  
+.logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: var(--fonte-bebas);
+}
+  
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  height: 8vh;
+}
+  
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+  
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+  
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/*div (tres seta)*/
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: black;
+  margin: 8px;
+  transition: 0.3s;
+}
+  
+
+@media (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+  
+.nav-list.active {
+  transform: translateX(0);
+}
+
+
+@media (max-width: 600px) {
+  .logo{
+    font-size: 12px;
+  }
+
+  .mobile-menu {
+    
+  }
+
+}
+  
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+  
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+  
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+  
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+} 
+
+
+
+/*PRINCIPAL===============================================================================*/
+main{
+  height: 98vh;
+  background-image: url();
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main div#txt{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  text-align: center;
+}
+
+main div#txt p{
+  font-size: 1.7em;
+  color: #fff;
+  font-family: var(--fonte-bebas);
+  padding-bottom: 13px;
+}
+
+main div#txt button{
+  font-family: var(--fonte-bebas);
+  border-radius: 10px;
+  min-width: 350px;
+  min-height: 25px;
+  background-color: rgba(255, 123, 0, 0.644);
+}
+
+main div#txt button:hover{
+  cursor: pointer;
+  background-color: rgb(255, 123, 0);
+}
+
+@media (max-width: 700px) {
+  main div#txt p{
+    font-size: 1.2em;
+  }
+  
+  main div#txt button{
+    min-width: 260px;
+  }
+}
+
+@media (max-width: 500px) {
+  main div#txt p{
+    font-size: 0.8em;
+  }
+  
+  main div#txt button{
+    min-width: 170px;
+  }
+}
